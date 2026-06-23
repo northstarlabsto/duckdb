@@ -15,7 +15,7 @@ permissions:
 jobs:
   apply:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
-    runs-on: namespace-profile-linux-slim
+    runs-on: blacksmith-4vcpu-ubuntu-2404
     steps:
       - name: Download PR info
         id: download_payload
