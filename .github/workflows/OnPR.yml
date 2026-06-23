@@ -11,7 +11,7 @@ concurrency:
 jobs:
   prepare:
     name: Prepare PR actions
-    runs-on: namespace-profile-linux-slim
+    runs-on: blacksmith-4vcpu-ubuntu-2404
     steps:
       - name: Build action payload
         env:
